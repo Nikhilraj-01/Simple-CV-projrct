@@ -16,8 +16,8 @@ jobs:
 
       - name: Deploy website
         run: |
-          sudo chown -R nikhil9961:nikhil9961 /var/www/cvapp
           mkdir -p /var/www/cvapp
+          sudo chown -R nikhil9961:nikhil9961 /var/www/cvapp
           cp index.html /var/www/cvapp/index.html
           chmod 755 /var/www/cvapp
           chmod 644 /var/www/cvapp/index.html
