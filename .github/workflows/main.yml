@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:    
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -16,10 +16,7 @@ jobs:
 
       - name: Deploy website
         run: |
-          mkdir -p /var/www/cvapp
-          sudo chown -R nikhil9961:nikhil9961 /var/www/cvapp
           cp index.html /var/www/cvapp/index.html
-          chmod 755 /var/www/cvapp
           chmod 644 /var/www/cvapp/index.html
 
       - name: Show deployment status
